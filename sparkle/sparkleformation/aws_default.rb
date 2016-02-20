@@ -1,6 +1,6 @@
 SparkleFormation.new(:compute, :provider => :aws) do
   AWSTemplateFormatVersion '2010-09-09'
-  description 'Sparkle Compute Template'
+  description 'AWS Compute Template'
 
   parameters do
     sparkle_image_id.type 'String'
