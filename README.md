@@ -1,6 +1,6 @@
 #docker-aws
 
-A docker container for aws tooling
+A docker container for running SparkleFormation
 
 Create .awsrc
 ---
