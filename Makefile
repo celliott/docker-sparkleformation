@@ -1,10 +1,7 @@
-# docker-aws makefile
+# docker-sparkle makefile
 
-PORTS = -p 80:5000
-ENVS = -e ADMIN_USER=${ADMIN_USER} -e ADMIN_PASS=${ADMIN_PASS} -e ADMIN_EMAIL=${ADMIN_EMAIL} -e MODULE=${MODULE}
-
+CONTAINER = sparkle
 VOLUMES = -v ~/:/root
-CONTAINER = aws
 
 .PHONY: container run
 
