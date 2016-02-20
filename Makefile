@@ -1,7 +1,7 @@
 # docker-sparkle makefile
 
 CONTAINER = sparkle
-VOLUMES = -v ~/:/root -v sparkle:/sparkle
+VOLUMES = -v ~/:/root -v `pwd`/sparkle:/sparkle
 
 .PHONY: container run
 
