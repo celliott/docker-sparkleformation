@@ -2,7 +2,7 @@
 
 A docker container for running SparkleFormation
 
-Create .awsrc
+Create .awsrc on host
 ---
 	$ vim ~/.awsrc
 
@@ -14,3 +14,8 @@ Usage
 ---
 	$ make container
 	$ make run
+	
+Use sfn cli	
+---
+	$ source ~/.awsrc
+	$ sfn list

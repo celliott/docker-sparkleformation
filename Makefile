@@ -1,7 +1,7 @@
 # docker-sparkle makefile
 
-CONTAINER = sparkle
-VOLUMES = -v ~/:/root -v `pwd`/sparkle:/sparkle
+CONTAINER = sparkleformation
+VOLUMES = -v ~/:/root -v `pwd`/sparkle:/sparkle -v /etc/localtime:/etc/localtime:ro
 
 .PHONY: container run
 
@@ -10,6 +10,7 @@ container :
 
 run :
 	docker run --restart=always --name $(CONTAINER) -i -d $(PORTS) $(ENVS) $(VOLUMES) -t $(CONTAINER)
+	docker exec -ti $(CONTAINER) /bin/bash
 
 kill :
 	docker kill $(CONTAINER)
